@@ -12,4 +12,6 @@ dependencies:
 ```
 
 下記コマンドを実行しGTKをinstall(手元では2回実行することで正しくリンク作業が完了した)
-```brew install gobject-introspection gtk+ gtk+3```
+```
+brew install gobject-introspection gtk+ gtk+3
+```
