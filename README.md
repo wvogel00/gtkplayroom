@@ -15,3 +15,6 @@ dependencies:
 ```
 brew install gobject-introspection gtk+ gtk+3
 ```
+
+## 実行画面の例
+![image](https://user-images.githubusercontent.com/991030/89706263-f6638980-d99e-11ea-806a-f360fb03f786.png)
