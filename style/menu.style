@@ -1,0 +1,34 @@
+<ui>
+    <menubar>
+        <menu name="File" action="FileAction">
+            <menuitem name="New" action="NewAction" />
+            <menuitem name="Open" action="OpenAction" />
+            <menuitem name="Save" action="SaveAction" />
+            <menuitem name="SaveAs" action="SaveAsAction" />
+            <separator/>
+            <menuitem name="Exit" action="ExitAction"/>
+            <placeholder name="FileMenuAdditions" />
+        </menu>
+        <menu name="Edit" action="EditAction">
+            <menuitem name="Cut" action="CutAction"/>
+            <menuitem name="Copy" action="CopyAction"/>
+            <menuitem name="Paste" action="PasteAction"/>
+        </menu>
+    </menubar>
+    <toolbar>
+        <placeholder name="FileToolItems">
+            <separator/>
+            <toolitem name="New" action="NewAction"/>
+            <toolitem name="Open" action="OpenAction"/>
+            <toolitem name="Save" action="SaveAction"/>
+            <separator/>
+        </placeholder>
+        <placeholder name="EditToolItems">
+            <separator/>
+            <toolitem name="Cut" action="CutAction"/>
+            <toolitem name="Copy" action="CopyAction"/>
+            <toolitem name="Paste" action="PasteAction"/>
+            <separator/>
+        </placeholder>
+    </toolbar>
+</ui>

@@ -1,0 +1,72 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 8e746fda4adf73797208e758451755d1fe49e85ff13e7947b9fe822582a8f2e6
+
+name:           gtkplayroom
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/gtkplayroom#readme>
+homepage:       https://github.com/githubuser/gtkplayroom#readme
+bug-reports:    https://github.com/githubuser/gtkplayroom/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/gtkplayroom
+
+library
+  exposed-modules:
+      Lib
+      MenuBar
+  other-modules:
+      Paths_gtkplayroom
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , gi-gtk
+    , haskell-gi-base
+    , text
+  default-language: Haskell2010
+
+executable gtkplayroom-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_gtkplayroom
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , gi-gtk
+    , gtkplayroom
+    , haskell-gi-base
+    , text
+  default-language: Haskell2010
+
+test-suite gtkplayroom-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_gtkplayroom
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , gi-gtk
+    , gtkplayroom
+    , haskell-gi-base
+    , text
+  default-language: Haskell2010
