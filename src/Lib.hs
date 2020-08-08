@@ -10,6 +10,7 @@ import qualified GI.Gtk       as Gtk
 import GI.Gtk.Objects.Box (boxNew, boxPackStart, setBoxHomogeneous)
 import GI.Gtk.Objects.Container (containerAdd)
 import GI.Gtk.Enums (Orientation (..), WindowType(..))
+import GI.Gtk.Objects.Widget (setWidgetHeightRequest, setWidgetWidthRequest)
 import MenuBar
 
 playGTK :: IO ()
@@ -18,6 +19,8 @@ playGTK = do
     win <- new Gtk.Window [ #title := "棚ぼた!" ]
     Gtk.windowResize win 400 270
     on win #destroy Gtk.mainQuit
+    setWidgetWidthRequest win 200
+    setWidgetHeightRequest win 100
     setWidgets win
     #showAll win
     Gtk.main
